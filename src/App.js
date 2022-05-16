@@ -4,6 +4,7 @@ import Sobre from './pages/Sobre';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import LayoutDefault from './pages/LayoutDefault';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
