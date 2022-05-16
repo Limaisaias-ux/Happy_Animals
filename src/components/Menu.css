@@ -1,0 +1,13 @@
+.nav-bar{
+    display: flex;
+    background: burlywood;
+    padding: 1rem;
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.nav-bar .active{
+    color: #dd5c01 
+}
