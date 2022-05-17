@@ -1,14 +1,17 @@
-.conteiner{
-    width: 600px;
-    height: 500px;
-    overflow: hidden;
+.card {
     background-color: black;
-    background-attachment: fixed;
 }
-.title h1, p{
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.text{
     color: burlywood;
-    align-items: center;
 }
-.title h4{
-    color: #FFFACD;
+
+.p{
+    color: white;
 }
