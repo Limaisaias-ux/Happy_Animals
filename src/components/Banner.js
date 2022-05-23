@@ -15,13 +15,10 @@ function Banner(){
             <Card.Subtitle className="p">
             Especialistas em animais domésticos
             </Card.Subtitle>
-            <Card.Text className="text">
-              Entre em Contato
-            </Card.Text>
           </Card.Body>
         </Card>
         <Card>
-          <Card.Img src={banner} />
+          <Card.Img className="img" src={banner} />
         </Card>
         </CardGroup>
       </>
