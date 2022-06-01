@@ -7,13 +7,15 @@ import Menu from "../components/Menu"
 //const { formik } = Formik;
 
 const schema = Yup.object().shape({
-    firstName: Yup.string().required(),
+    name: Yup.string().required(),
     email: Yup.string().required(),
     data: Yup.string().required(),
     cpf: Yup.string().required(),
-    city: Yup.string().required(),
-    state: Yup.string().required(),
-    zip: Yup.string().required(),
+    cidade: Yup.string().required(),
+    estado: Yup.string().required(),
+    endereco: Yup.string().required(),
+    cep: Yup.string().required(),
+    senha: Yup.string().required(),
     terms: Yup.bool().required().oneOf([true], 'Aceite os Termos'),
   });
 
@@ -26,12 +28,13 @@ function Cadastro() {
       validationSchema={schema}
       onSubmit={console.log}
       initialValues={{
-        Name: '',
+        name: '',
         email: '',
         data: '',
         cpf: '',
-        city: '',
-        state: '',
+        cidade: '',
+        estado: '',
+        endereco: '',
         cep: '',
         senha: '',
         terms: false,
@@ -54,9 +57,9 @@ function Cadastro() {
                 type="text"
                 placeholder="Nome Completo"
                 name="Name"
-                value={values.Name}
+                value={values.name}
                 onChange={handleChange}
-                isValid={touched.Name && !errors.Name}
+                isValid={touched.name && !errors.name}
               />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
@@ -114,14 +117,14 @@ function Cadastro() {
               <Form.Control
                 type="text"
                 placeholder="Cidade"
-                name="city"
-                value={values.city}
+                name="cidade"
+                value={values.cidade}
                 onChange={handleChange}
-                isInvalid={!!errors.city}
+                isInvalid={!!errors.cidade}
               />
 
               <Form.Control.Feedback type="invalid">
-                {errors.city}
+                {errors.cidade}
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="3" controlId="validationFormik04">
@@ -129,16 +132,16 @@ function Cadastro() {
               <Form.Control
                 type="text"
                 placeholder="Estado"
-                name="state"
-                value={values.state}
+                name="estado"
+                value={values.estado}
                 onChange={handleChange}
-                isInvalid={!!errors.state}
+                isInvalid={!!errors.estado}
               />
               <Form.Control.Feedback type="invalid">
-                {errors.state}
+                {errors.estado}
               </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group as={Col} md="3" controlId="validationFormik05">
+            <Form.Group as={Col} md="2" controlId="validationFormik05">
               <Form.Label>Cep</Form.Label>
               <Form.Control
                 type="text"
@@ -148,9 +151,23 @@ function Cadastro() {
                 onChange={handleChange}
                 isInvalid={!!errors.cep}
               />
-
               <Form.Control.Feedback type="invalid">
                 {errors.cep}
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="3" controlId="validationFormik06">
+              <Form.Label>Endereço</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Endereço"
+                name="endereco"
+                value={values.endereco}
+                onChange={handleChange}
+                isInvalid={!!errors.endereco}
+              />
+
+              <Form.Control.Feedback type="invalid">
+                {errors.endereco}
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
