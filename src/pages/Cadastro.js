@@ -7,13 +7,13 @@ import Menu from "../components/Menu"
 //const { formik } = Formik;
 
 const schema = Yup.object().shape({
-    firstName: Yup.string().required(),
+    Name: Yup.string().required(),
     email: Yup.string().required(),
-    data: Yup.string().required(),
+    date: Yup.string().required(),
     cpf: Yup.string().required(),
     city: Yup.string().required(),
     state: Yup.string().required(),
-    zip: Yup.string().required(),
+    cep: Yup.string().required(),
     terms: Yup.bool().required().oneOf([true], 'Aceite os Termos'),
   });
 
@@ -28,7 +28,7 @@ function Cadastro() {
       initialValues={{
         Name: '',
         email: '',
-        data: '',
+        date: '',
         cpf: '',
         city: '',
         state: '',
@@ -77,16 +77,16 @@ function Cadastro() {
               <Form.Label>D.Nascimento</Form.Label>
               <InputGroup hasValidation>
                 <Form.Control
-                  type="text"
-                  placeholder="data"
+                  type="date"
+                  placeholder="date"
                   aria-describedby="inputGroupPrepend"
-                  name="data"
-                  value={values.data}
+                  name="date"
+                  value={values.date}
                   onChange={handleChange}
-                  isInvalid={!!errors.data}
+                  isInvalid={!!errors.date}
                 />
                 <Form.Control.Feedback type="invalid">
-                  {errors.data}
+                  {errors.date}
                 </Form.Control.Feedback>
               </InputGroup>
             </Form.Group>
