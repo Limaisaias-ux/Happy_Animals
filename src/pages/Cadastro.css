@@ -1,0 +1,21 @@
+.fundo{
+    margin: 20px auto;
+    width: 88%;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    border-style: ridge;
+}
+.geral{
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20PX;
+    margin-block-end: 70px;
+    flex-wrap: wrap;
+}
+
+.h1{
+    margin-block-end: 90px;
+}

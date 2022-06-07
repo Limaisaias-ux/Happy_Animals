@@ -1,12 +1,14 @@
 import Form from "react-bootstrap/Form";
-import { FormGroup } from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import Menu from "../components/Menu"
+import './Login.css';
 
 function Login() {
     return (
         <>
     <Menu />
+    <div className="fundo">
+        <h1>Fazer Login</h1>
         <Form>
     <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email </Form.Label>
@@ -21,6 +23,7 @@ function Login() {
         Logar
     </Button>
     </Form>
+    </div>
     </>
     );
 }

@@ -2,6 +2,12 @@
     color: white;
     font-size: 20px;
     line-height: 130%;
+    margin: 20px auto;
+    width: 88%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 p.um,p.dois { 
     font-size: 20px; 
@@ -10,4 +16,5 @@ p.um,p.dois {
 
 .title, .um, .dois{
     text-align: center;
+    margin-top: 70PX;
 } 

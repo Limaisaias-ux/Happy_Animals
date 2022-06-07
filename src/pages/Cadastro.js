@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik } from 'formik'; //npm install formik --save
 import * as Yup from 'yup';//npm install -S yup
 import { Form, InputGroup, Row, Col, Button } from "react-bootstrap";
+import './Cadastro.css';
 import Menu from "../components/Menu"
 
 //const { formik } = Formik;
@@ -10,11 +11,12 @@ const schema = Yup.object().shape({
   Name: Yup.string().required(),
   email: Yup.string().required(),
   date: Yup.string().required(),
-  cpf: Yup.string().required(),
+  cpf: Yup.string().min(11,'Mínimo 11 caracteres').required(),
   city: Yup.string().required(),
   state: Yup.string().required(),
-  cep: Yup.string().required(),
-  pass: Yup.string().required(),
+  cep: Yup.string().min(8,'Mínimo 8 caracteres').required(),
+  pass: Yup.string().min(8,'Mínimo 8 caracteres')
+  .required(),
   terms: Yup.bool().required().oneOf([true], 'Aceite os Termos'),
 });
 
@@ -22,7 +24,7 @@ function Cadastro() {
   return (
     <>
       <Menu />
-
+    <div className='fundo'>
       <Formik
         validationSchema={schema}
         onSubmit={console.log}
@@ -47,6 +49,8 @@ function Cadastro() {
           isValid,
           errors,
         }) => (
+          <div className='geral'>
+            <h1>Criar Conta</h1>
           <Form noValidate onSubmit={handleSubmit}>
             <Row className="mb-3">
               <Form.Group as={Col} md="4" controlId="validationFormik01">
@@ -157,7 +161,7 @@ function Cadastro() {
             </Row>
             <Row>
               <Form.Group as={Col} md="2" controlId='validationFormikpass'>
-                <Form.Label>pass</Form.Label>
+                <Form.Label>Senhas</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder='Senha'
@@ -180,11 +184,12 @@ function Cadastro() {
                 id="validationFormik0"
               />
             </Form.Group>
-            <Button type="submit">Criar Cadastro</Button>
+            <Button class="buttom" type="submit">Criar Cadastro</Button>
           </Form>
+          </div>
         )}
       </Formik>
-
+    </div>
     </>
   );
 }

@@ -8,7 +8,7 @@ function Banner(){
     return(
         <>
         <CardGroup className="container">
-        <Card className="text-center" style={{ width: "30rem", height:"30rem", }}>
+        <Card className="card text-center" style={{ width: "30rem", height:"30rem", }}>
           <Card.Body className="card">
             <Card.Title className="text">Seja Muito</Card.Title>
             <Card.Title className="text">Bem vindo à Happy Animals</Card.Title>
