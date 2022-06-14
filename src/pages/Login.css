@@ -1,14 +1,22 @@
-.fundo{
+.parede{
     margin: 20px auto;
-    width: 100px;
-    height: 100px;
+    width: 450px;
+    height: 430px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 20px;
     border-style: ridge;
 }
+.corpo{
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 40px;
+    margin-block-end: 50px;
+    flex-wrap: wrap;
+}
 
-.h1{
-    margin-block-end: 90px;
+.loname, .form{
+    margin-block-end: 15px;
+    margin-left: 90px;
 }

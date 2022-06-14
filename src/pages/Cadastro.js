@@ -50,7 +50,7 @@ function Cadastro() {
           errors,
         }) => (
           <div className='geral'>
-            <h1>Criar Conta</h1>
+            <h1 className='formtitle'>Criar Conta</h1>
           <Form noValidate onSubmit={handleSubmit}>
             <Row className="mb-3">
               <Form.Group as={Col} md="4" controlId="validationFormik01">
