@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Formik } from 'formik'; //npm install formik --save
 import * as Yup from 'yup';//npm install -S yup
 import { Form, InputGroup, Row, Col, Button } from "react-bootstrap";
@@ -8,7 +9,7 @@ import Menu from "../components/Menu"
 //const { formik } = Formik;
 
 const schema = Yup.object().shape({
-  Name: Yup.string().required(),
+  name: Yup.string().required(),
   email: Yup.string().required(),
   date: Yup.string().required(),
   cpf: Yup.string().min(11,'Mínimo 11 caracteres').required(),
@@ -29,7 +30,7 @@ function Cadastro() {
         validationSchema={schema}
         onSubmit={console.log}
         initialValues={{
-          Name: '',
+          name: '',
           email: '',
           date: '',
           cpf: '',
@@ -39,6 +40,15 @@ function Cadastro() {
           pass: '',
           terms: false,
         }}
+
+        onSubmit={async (values) => {
+          await new Promise((r) => setTimeout(r, 500));
+          fetch('http://localhost/lp2/api/user/create', {
+            method: "POST", body: JSON.stringify(values)
+          })
+          
+        }}
+
       >
         {({
           handleSubmit,
@@ -58,10 +68,10 @@ function Cadastro() {
                 <Form.Control
                   type="text"
                   placeholder="Nome Completo"
-                  name="Name"
-                  value={values.Name}
+                  name="name"
+                  value={values.name}
                   onChange={handleChange}
-                  isValid={touched.Name && !errors.Name}
+                  isValid={touched.name && !errors.name}
                 />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>

@@ -2,9 +2,14 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <>
+      <div className='footer'>
         <span>Footer</span>
-    </div>
+      </div>
+      <div className='footertwo'>
+        <span>FOOTERZIN</span>
+      </div>
+    </>
   )
 }
 
