@@ -1,7 +1,7 @@
 .fundo{
     margin: 20px auto;
     width: 88%;
-    height: 530px;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

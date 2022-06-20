@@ -1,12 +1,12 @@
 import Menu from "../components/Menu";
 
-function Sobre() {
+function Produtos() {
     return (
         <>
         <Menu />
-        <h1>Sobre</h1>
+        <h1>Produtos</h1>
         </>
     );
 }
 
-export default Sobre
+export default Produtos
