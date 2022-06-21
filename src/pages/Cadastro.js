@@ -3,7 +3,6 @@ import { Formik } from 'formik'; //npm install formik --save
 import * as Yup from 'yup';//npm install -S yup
 import { Form, InputGroup, Row, Col, Button } from "react-bootstrap";
 import './Cadastro.css';
-import { useRef, useEffect} from 'react';
 import Menu from "../components/Menu"
 
 //const { formik } = Formik;
