@@ -1,27 +1,54 @@
-.cardbody {
-    background-color: black;
+.txtservices{
+    font-size: 15px;
+    margin-top: auto;
 }
-
-.container {
-    background-color: 1C1C1C;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    margin-top: 20px;
-    margin-block-end: 70px;
-}
-
-.text{
-    color: burlywood;
-    font-size: 40px;
-    font-style: italic;
-    margin-top: 30px;
-}
-
-.p{
+.txto { 
+    text-align: center;
     color: white;
 }
 
-img{
-    height: 100%;
+.txtitle{
+    color: salmon;
+    text-align: center;
+    padding-top: 15px;
+    margin-block-end: 30px;
+}
+
+.serum{
+    background-image: url(https://images.pexels.com/photos/6131156/pexels-photo-6131156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    width: 724px; 
+    height: 490px;
+    background-size: cover;
+    margin: 19px;
+    padding-right: 15px;
+}
+
+.serdois{
+    background-image: url("https://static.wixstatic.com/media/4f7e622c499948719eef110e0512ad43.jpeg/v1/fill/w_543,h_650,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/4f7e622c499948719eef110e0512ad43.webp");
+    width: 724px; 
+    height: 490px;
+    background-size: cover;
+    margin: 19px;
+}
+
+.sertres{
+    background-image: url("https://static.wixstatic.com/media/f82978d2e0884a65acf18cb007ae2fb5.jpg/v1/fill/w_543,h_650,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/f82978d2e0884a65acf18cb007ae2fb5.webp");
+    width: 724px; 
+    height: 490px;
+    background-size: cover;
+    margin: 19px;
+}
+
+.sertitle{
+    font-style: italic;
+    margin-top: 300px;
+}
+ 
+.cnt{
+    color: white;
+}
+
+.contser{
+    padding-top: 45%;
+    padding-left: 40%;
 }

@@ -1,19 +1,23 @@
 import Menu from "../components/Menu";
 import Banner from '../components/Banner';
 import Sobre from '../components/Sobre';
+import Services from '../components/Services';
 import './Home.css';
 
 function Home() {
     return (
         <>
-        <Menu />        
-        <div className="conteudo">
-        <br/>
+        <div className="menu">
+        <Menu />
+        </div>        
+        <div className="banner">
         <Banner />
-        <br/>
         </div>
         <div className="sobre">
             <Sobre />
+        </div>
+        <div className="services">
+            <Services />
         </div>
         </>
     );

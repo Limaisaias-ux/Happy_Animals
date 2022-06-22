@@ -1,6 +1,6 @@
 import React from "react";
 import './Banner.css';
-import banner from '../img/bannerimg.jpg';
+//import banner from '../img/bannerimg.jpg';
 import Card from 'react-bootstrap/Card';
 import { CardGroup } from "react-bootstrap";
 
@@ -8,7 +8,7 @@ function Banner() {
   return (
     <>
       <CardGroup className="container">
-        <Card className="cardbody text-center" style={{ width: "30rem", height: "30rem", }}>
+        <Card className="cardbody text-center" style={{ width: "35rem", height: "40rem", }}>
           <Card.Body className="cardbody">
             <Card.Text className="text">Seja Muito</Card.Text>
             <Card.Text className="text">Bem vindo(a)</Card.Text>
@@ -19,8 +19,8 @@ function Banner() {
             </Card.Subtitle>
           </Card.Body>
         </Card>
-        <Card>
-          <Card.Img className="img" src={banner} />
+        <Card style={{ width: "35rem", height: "40rem", }}>
+          <Card className="imgban" />
         </Card>
       </CardGroup>
     </>

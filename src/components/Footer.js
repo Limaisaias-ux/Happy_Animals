@@ -7,7 +7,7 @@ const Footer = () => {
         <span>Footer</span>
       </div>
       <div className='footertwo'>
-        <span>FOOTERZIN</span>
+        <span>©2022 por Happy Animals.</span>
       </div>
     </>
   )

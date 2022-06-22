@@ -1,13 +1,13 @@
 .nav-bar{
     display: flex;
-    background: burlywood;
+    background: sandybrown;
     padding: 0px;
     justify-content: space-between;
     list-style-type: none;
     align-items:center;
-    font-size: 15px;
-    
+    font-size: 19px;
 }
+
 .itens{
     margin-right: 20%;
 }
@@ -18,10 +18,13 @@
 
 .nav-bar a{
     text-decoration: none;
+    padding-right: 15px;
     color: rgb(255, 255, 255);
 }
 
 .nav-bar .active{
     color: black;
+    position: fixed;
+
 }
  
