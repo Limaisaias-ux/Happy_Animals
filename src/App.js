@@ -5,20 +5,22 @@ import Cadastro from './pages/Cadastro';
 import LayoutDefault from './pages/LayoutDefault';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Produtos from './pages/Produtos';
+import AuthProvider from './providers/authProvider';
 
 
 
 function App() {
   return (
+    <AuthProvider>
     <Routes>
       <Route path='/' element={<LayoutDefault />}>
       <Route path='/' index element={<Home />} />
-      <Route path='/produtos'element={<Produtos />} />
+      <Route path='/produtos'element={<Produtos />}/>
       <Route path='/login'element={<Login />} />
-      <Route path='/cadastro'element={<Cadastro />} />
+      <Route path='/cadastro'element={<Cadastro />}/>
       </Route>
     </Routes>
-
+    </AuthProvider>
   )
 }
 

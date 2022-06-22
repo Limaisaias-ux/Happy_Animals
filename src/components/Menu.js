@@ -7,9 +7,8 @@ const Menu = () => {
   return (
     <div className='nav-bar'>
         <AddImage />
-        <hr />
         <div className='itens'>
-        <NavLink to="/home">Home</NavLink> 
+        <NavLink style={{margin: '0 0 0 10px'}} to="/">Home</NavLink> 
         <NavLink style={{margin: '0 0 0 10px'}} to="/Produtos">Produtos</NavLink> 
         <NavLink style={{margin: '0 0 0 10px'}} to="/login">Login</NavLink> 
         <NavLink style={{margin: '0 0 0 10px'}} to="/cadastro">Cadastre-se</NavLink>

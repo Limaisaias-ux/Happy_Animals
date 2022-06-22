@@ -1,3 +1,39 @@
 .tname{
     margin-left: 680px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    color: black;
+    padding: 10px 0 0 0;
+    text-decoration-line: none;
+    padding-top: 110px;
+    padding-block-end: 35px;
+}
+
+.pcorp{
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 332px;
+    margin: 0 15px 15px 0;
+}
+
+.proimg{
+    margin: 0 15px 0 0;
+    border-radius: 15px;
+}
+
+.ptitle{
+    color: black;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.ptext{
+    color:rgb(87, 87, 87);
+    margin: 0;
 }
