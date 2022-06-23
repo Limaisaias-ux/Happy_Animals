@@ -29,7 +29,7 @@ const Menu = () => {
             <button onClick={logout}>Sair</button>
           </>
           )
-          : (<span><Link to="admin/login">Login Admin</Link></span>)
+          : (<span> </span>)
         }
     </div>
   )
