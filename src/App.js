@@ -6,7 +6,9 @@ import LayoutDefault from './pages/LayoutDefault';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Produtos from './pages/Produtos';
 import AuthProvider from './providers/authProvider';
-
+import Admin from './pages/Admin';
+import CadastroProducts from './components/CadastroProducts';
+import EditProduct from './components/EditProduct';
 
 
 function App() {
@@ -14,10 +16,15 @@ function App() {
     <AuthProvider>
     <Routes>
       <Route path='/' element={<LayoutDefault />}>
-      <Route path='/' index element={<Home />} />
-      <Route path='/produtos'element={<Produtos />}/>
-      <Route path='/login'element={<Login />} />
-      <Route path='/cadastro'element={<Cadastro />}/>
+        <Route path='/' index element={<Home />} />
+        <Route path='/produtos'element={<Produtos />}/>
+        <Route path='/login'element={<Login />} />
+        <Route path='/cadastro'element={<Cadastro />}/>
+
+        {/* PARTE ADM */}
+        <Route path='/Admin' element={<Admin />} />
+        <Route path='/CadastroProduct' element={<CadastroProducts />} />
+        <Route path='/EditProduct' element={<EditProduct />} />
       </Route>
     </Routes>
     </AuthProvider>

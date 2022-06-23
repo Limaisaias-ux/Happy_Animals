@@ -20,7 +20,7 @@
     height: 490px;
     background-size: cover;
     margin: 19px;
-    padding-right: 15px;
+    margin-block-end: 50px;
 }
 
 .serdois{
@@ -29,6 +29,7 @@
     height: 490px;
     background-size: cover;
     margin: 19px;
+    margin-block-end: 50px;
 }
 
 .sertres{
@@ -37,18 +38,24 @@
     height: 490px;
     background-size: cover;
     margin: 19px;
+    margin-block-end: 50px;
 }
 
 .sertitle{
-    font-style: italic;
-    margin-top: 300px;
+    font-size: 400px;
+    color: black;
 }
  
 .cnt{
     color: white;
+    margin-left: 685px;
 }
 
 .contser{
-    padding-top: 45%;
-    padding-left: 40%;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.sergroup{
+    margin: 20px auto;
 }

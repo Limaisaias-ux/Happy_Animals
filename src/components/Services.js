@@ -21,28 +21,26 @@ function Services() {
           </p>
      </div>
 
-      <CardGroup>
+      <CardGroup className="sergroup">
       <Card className="serum">
         <div className="contser">
           <Card.Title className="sertitle">Tosa para pets</Card.Title>
-          <Card.Link className="cnt">Entre em Contato</Card.Link>
         </div>
         </Card>
         <Card className="serdois">
         <div className="contser">
           <Card.Title className="sertitle">Gravação em plaquinha</Card.Title>
           <Card.Title className="sertitle">de identificação</Card.Title>
-          <Card.Link className="cnt">Entre em Contato</Card.Link>
         </div>
         </Card>
         <Card className="sertres">
         <div className="contser">
-          <Card.Title className="sertitle">Consultoria sobre alimentação de animais</Card.Title>
+          <Card.Title className="sertitle">Consultoria sobre alimentação</Card.Title>
           <Card.Title className="sertitle">de animais de estimação</Card.Title>
-          <Card.Link className="cnt">Entre em Contato</Card.Link>
         </div>
         </Card>
       </CardGroup>
+      <Card.Link className="cnt">Entre em Contato</Card.Link>
     </>
   )
 }

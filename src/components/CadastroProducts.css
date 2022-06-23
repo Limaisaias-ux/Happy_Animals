@@ -1,7 +1,7 @@
-.parede{
+.atras{
     margin: 20px auto;
-    width: 450px;
-    height: 430px;
+    width: 650px;
+    height: 510px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -10,15 +10,24 @@
     margin-top: 140px;
     margin-block-end: 50px;
 }
-.corpo{
+.frente{
     justify-content: space-between;
     width: 400px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-block-end: 50px;
     flex-wrap: wrap;
+    padding-right: 200px;
 }
 
-.loname, .form{
+.namep, .formca{
     margin-block-end: 15px;
-    margin-left: 70px;
+    margin-left: 20px;
+}
+
+.fogroup{
+    margin-block-end: 10px;
+}
+
+.blogar{
+    margin-top: 10px;
 }

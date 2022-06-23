@@ -1,4 +1,4 @@
-.parede{
+.catras{
     margin: 20px auto;
     width: 450px;
     height: 430px;
@@ -10,7 +10,7 @@
     margin-top: 140px;
     margin-block-end: 50px;
 }
-.corpo{
+.cafrente{
     justify-content: space-between;
     width: 400px;
     margin-top: 40px;
@@ -18,7 +18,7 @@
     flex-wrap: wrap;
 }
 
-.loname, .form{
+.caname, .focagrup{
     margin-block-end: 15px;
     margin-left: 70px;
 }
