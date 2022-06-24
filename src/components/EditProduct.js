@@ -10,7 +10,7 @@ const EditProduct = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost/lp2/api/product/select-by-id/?id="+productId)
+        fetch("http://localhost/lp2/api/product/selectById"+productId)
             .then((response) => response.json())
             .then((data) => setProduct(data));
     }, [productId]);
@@ -44,7 +44,7 @@ const EditProduct = () => {
           <div className='catras'>
               {product ? (
                 <div className='cafrente'>
-                  <h1 className='caname'>Editar Cadastro</h1>
+                  <h1 className='caname'>Editar Produto</h1>
                   <Form noValidate onSubmit={(event) => handleSubmit(event)}>
                   <Row className="mb-3">
                     <Form.Group className='focagroup' as={Col} md="8">
@@ -92,7 +92,7 @@ const EditProduct = () => {
                       />
                     </Form.Group>
                   </Row>
-                  <Button className='blogar' type="submit">Cadastrar</Button>
+                  <Button className='blogar' type="submit">Editar</Button>
                   </Form>
                 </div>
                 )
