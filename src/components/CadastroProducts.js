@@ -5,6 +5,8 @@ import './CadastroProducts.css';
 import Menu from "../components/Menu"
 import { useRef, useEffect } from 'react';
 import { useAuth } from '../providers/authProvider';
+import { useNavigate } from "react-router-dom"
+
 
 const CadastroProducts = () => {
 
@@ -12,6 +14,7 @@ const CadastroProducts = () => {
     const titleRef = useRef();
     const descriptionRef = useRef();
     const priceRef = useRef();
+    const navigate = useNavigate()
     const { userLogged } = useAuth();
   
     useEffect(() => {
@@ -44,6 +47,7 @@ const CadastroProducts = () => {
                     titleRef.current.focus()
                     console.log(data)
                     alert(data.message)
+                    navigate('/Admin')
                 });
               }}
               initialValues={{

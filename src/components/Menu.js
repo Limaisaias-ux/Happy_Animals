@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import AddImage from '../layout/AddImage'
 import './Menu.css'
 import { useAuth } from '../providers/authProvider'
@@ -26,7 +26,7 @@ const Menu = () => {
           ? (
             <>
             <span>Logado como: {userLogged.email}</span> 
-            <button onClick={logout}>Sair</button>
+            <button className='bsair' onClick={logout}>Sair</button>
           </>
           )
           : (<span> </span>)

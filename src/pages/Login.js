@@ -5,7 +5,8 @@ import { Form, Row, Col, Button } from "react-bootstrap";
 import './Login.css';
 import { useRef, useEffect } from 'react';
 import { useAuth } from '../providers/authProvider';
-import Menu from "../components/Menu"
+import Menu from "../components/Menu";
+import { useNavigate } from "react-router-dom";
 
 //const { formik } = Formik;
 
@@ -22,6 +23,7 @@ const Login = () => {
   const passRef = useRef();
 
   const { setIsLogged, setUserLogged, isLogged, userLogged } = useAuth();
+  const navigate = useNavigate()
 
   useEffect(() => {
     emailRef.current.focus()
@@ -47,6 +49,7 @@ const Login = () => {
                     setIsLogged(true)
                     setUserLogged(data.session)
                     localStorage.setItem('userLogged', JSON.stringify(data.session));
+                    navigate('/')
                   } else {
                     let data = await response.json()
                     data?.message

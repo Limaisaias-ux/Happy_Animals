@@ -9,7 +9,6 @@ import AuthProvider from './providers/authProvider';
 import Admin from './pages/Admin';
 import CadastroProducts from './components/CadastroProducts';
 import EditProduct from './components/EditProduct';
-import DeleteProduct from './components/DeleteProduct';
 
 
 function App() {
@@ -23,10 +22,9 @@ function App() {
         <Route path='/cadastro'element={<Cadastro />}/>
 
         {/* PARTE ADM */}
-        <Route path='/Admin' element={<Admin />} />
-        <Route path='/CadastroProduct' element={<CadastroProducts />} />
-        <Route path='/EditProduct' element={<EditProduct />} />
-        <Route path='/DeleteProduct' element={<DeleteProduct />} />
+        <Route path='/admin' element={<Admin />} />
+        <Route path='/cadastroproduct' element={<CadastroProducts />} />
+        <Route path='/editproduct/:editproductId' element={<EditProduct />} />
       </Route>
     </Routes>
     </AuthProvider>

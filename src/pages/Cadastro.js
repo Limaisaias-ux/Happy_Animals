@@ -3,7 +3,8 @@ import { Formik } from 'formik'; //npm install formik --save
 import * as Yup from 'yup';//npm install -S yup
 import { Form, InputGroup, Row, Col, Button } from "react-bootstrap";
 import './Cadastro.css';
-import Menu from "../components/Menu"
+import Menu from "../components/Menu";
+import { useNavigate } from "react-router-dom";
 
 //const { formik } = Formik;
 
@@ -21,7 +22,10 @@ const schema = Yup.object().shape({
 });
 
 
-function Cadastro() {
+const Cadastro = () => {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <Menu />
@@ -58,6 +62,7 @@ function Cadastro() {
             fetch('http://localhost/lp2/api/user/create', {
               method: "POST", body: formData
             })
+            navigate('/login')
           }}
 
         >
